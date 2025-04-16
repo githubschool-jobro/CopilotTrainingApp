@@ -1,0 +1,27 @@
+@page "/errors"
+@using CopilotTrainingApp.Services
+@inject CalculatorService Calculator
+<h3>Lab 1: Debugging with GitHub Copilot</h3>
+<p>Try using the calculator below and identify what's broken. Use GitHub Copilot in VS to fix the issues.</p>
+<input @bind="value1" /> +
+<input @bind="value2" /> = @result
+<button @onclick="Add">Add</button>
+<p>@error</p>
+
+@code {
+    int value1, value2, result;
+    string error;
+
+    void Add()
+    {
+        try
+        {
+            result = Calculator.Add(value1, value2);
+            error = "";
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@page "/apilab"
+@using CopilotTrainingApp.Services
+@inject ApiDataService ApiService
+
+<h3>Lab 4: Generate a Web API with GitHub Copilot</h3>
+<p>This lab demonstrates how to use Copilot to scaffold a simple Web API that fetches or stores data.</p>
+<p><button @onclick="LoadData">Load Sample Data</button></p>
+<ul>
+    @foreach (var item in data)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+@code {
+    List<string> data = new();
+
+    async Task LoadData()
+    {
+        data = await ApiService.GetDataAsync();
+    }
+}
