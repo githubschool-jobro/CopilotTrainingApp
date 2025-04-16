@@ -1,0 +1,18 @@
+version: 1
+files:
+  include:
+    - Services/
+    - Models/
+    - Pages/
+    - Tests/
+    - README.md
+  exclude:
+    - bin/
+    - obj/
+    - wwwroot/
+
+language: csharp
+description: |
+  This is a Blazor-based .NET 8.0 training application with intentional bugs, testing scaffolds, and Copilot-specific labs. 
+  It helps users learn GitHub Copilot through hands-on code labs, including debugging, test writing, API scaffolding, 
+  and README generation.
