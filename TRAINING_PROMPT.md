@@ -15,7 +15,7 @@ Add an `ApiDataService` class that returns hardcoded data. Include instructions 
 
 Include:
 - A `MainLayout.razor` and `NavMenu.razor` to navigate between labs.
-- User the MVC style where possible.
+- Use the MVC style where possible.
 - A `README.md` scaffold explaining the purpose of the app and how to use Copilot with it.
 - Markdown instructions for each lab in a `LabInstructions/` folder.
 - A `.github/copilot-instructions.md` file with style and structure guidelines for Copilot.
