@@ -2,7 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.35906.104
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotTrainingApp", "CopilotTrainingApp.csproj", "{8F3A38B0-F720-4F88-BD9F-9240EECB5C94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotTrainingAppOld", "CopilotTrainingAppOld.csproj", "{8F3A38B0-F720-4F88-BD9F-9240EECB5C94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotTrainingApp.New", "..\CopilotTrainingApp.New\CopilotTrainingApp.New.csproj", "{56B0D1E6-A0E1-46C4-AD14-D7075A8BD3F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +16,10 @@ Global
 		{8F3A38B0-F720-4F88-BD9F-9240EECB5C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F3A38B0-F720-4F88-BD9F-9240EECB5C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F3A38B0-F720-4F88-BD9F-9240EECB5C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B0D1E6-A0E1-46C4-AD14-D7075A8BD3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B0D1E6-A0E1-46C4-AD14-D7075A8BD3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B0D1E6-A0E1-46C4-AD14-D7075A8BD3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B0D1E6-A0E1-46C4-AD14-D7075A8BD3F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
