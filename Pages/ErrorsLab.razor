@@ -16,7 +16,9 @@
     {
         try
         {
+            System.Console.WriteLine($"Debug: value1={value1}, value2={value2}");
             result = Calculator.Add(value1, value2);
+            System.Console.WriteLine($"Debug: result={result}");
             error = "";
         }
         catch (Exception ex)
