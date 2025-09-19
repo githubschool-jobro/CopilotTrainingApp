@@ -1,3 +1,116 @@
 @page "/"
-<h1>Welcome to Copilot Training App</h1>
-<p>Select a lab from the navigation menu to get started.</p>
+
+<MudText Typo="Typo.h3" Color="Color.Primary" GutterBottom="true">
+    Welcome to Copilot Training App
+</MudText>
+
+<MudPaper Class="pa-6" Elevation="2">
+    <MudText Typo="Typo.h5" GutterBottom="true">
+        🚀 Get Started with GitHub Copilot
+    </MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        This training application will help you learn how to effectively use GitHub Copilot for various development tasks. 
+        Select a lab from the navigation menu to begin your journey!
+    </MudText>
+    
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <div class="d-flex align-center mb-2">
+                        <MudIcon Icon="Icons.Material.Filled.BugReport" Color="Color.Error" Class="mr-2" />
+                        <MudText Typo="Typo.h6">Lab 1</MudText>
+                    </div>
+                    <MudText Typo="Typo.body2">Debug and fix errors in the Calculator Service with Copilot's assistance</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="errors">Start Lab 1</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <div class="d-flex align-center mb-2">
+                        <MudIcon Icon="Icons.Material.Filled.Assignment" Color="Color.Info" Class="mr-2" />
+                        <MudText Typo="Typo.h6">Lab 2</MudText>
+                    </div>
+                    <MudText Typo="Typo.body2">Generate comprehensive unit tests using Copilot's code generation</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="unittest">Start Lab 2</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <div class="d-flex align-center mb-2">
+                        <MudIcon Icon="Icons.Material.Filled.Description" Color="Color.Warning" Class="mr-2" />
+                        <MudText Typo="Typo.h6">Lab 3</MudText>
+                    </div>
+                    <MudText Typo="Typo.body2">Create project documentation and README files with AI assistance</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="readme">Start Lab 3</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <div class="d-flex align-center mb-2">
+                        <MudIcon Icon="Icons.Material.Filled.Api" Color="Color.Success" Class="mr-2" />
+                        <MudText Typo="Typo.h6">Lab 4</MudText>
+                    </div>
+                    <MudText Typo="Typo.body2">Build and consume APIs with Copilot's scaffolding capabilities</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="apilab">Start Lab 4</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <div class="d-flex align-center mb-2">
+                        <MudIcon Icon="Icons.Material.Filled.Transform" Color="Color.Secondary" Class="mr-2" />
+                        <MudText Typo="Typo.h6">Lab 5</MudText>
+                    </div>
+                    <MudText Typo="Typo.body2">Learn refactoring techniques and code improvement strategies</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="refactor">Start Lab 5</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+
+<MudPaper Class="pa-4 mt-4" Elevation="1">
+    <MudText Typo="Typo.h6" Color="Color.Primary" GutterBottom="true">
+        💡 Tips for Success
+    </MudText>
+    <MudStack>
+        <div class="d-flex align-center">
+            <MudIcon Icon="Icons.Material.Filled.Check" Color="Color.Success" Size="Size.Small" Class="mr-2" />
+            <MudText Typo="Typo.body2">Use descriptive prompts to guide Copilot effectively</MudText>
+        </div>
+        <div class="d-flex align-center">
+            <MudIcon Icon="Icons.Material.Filled.Check" Color="Color.Success" Size="Size.Small" Class="mr-2" />
+            <MudText Typo="Typo.body2">Review and understand the generated code before accepting</MudText>
+        </div>
+        <div class="d-flex align-center">
+            <MudIcon Icon="Icons.Material.Filled.Check" Color="Color.Success" Size="Size.Small" Class="mr-2" />
+            <MudText Typo="Typo.body2">Experiment with different prompt styles to get better results</MudText>
+        </div>
+        <div class="d-flex align-center">
+            <MudIcon Icon="Icons.Material.Filled.Check" Color="Color.Success" Size="Size.Small" Class="mr-2" />
+            <MudText Typo="Typo.body2">Combine Copilot suggestions with your own expertise</MudText>
+        </div>
+    </MudStack>
+</MudPaper>

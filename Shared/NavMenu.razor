@@ -1,54 +1,12 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">CopilotTrainingApp</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+﻿<div class="pa-4">
+    <MudText Typo="Typo.h6" Color="Color.Primary">Training Labs</MudText>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="errors">
-                <span class="oi oi-bug" aria-hidden="true"></span> Lab 1: Debugging
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="unittest">
-                <span class="oi oi-clipboard" aria-hidden="true"></span> Lab 2: Unit Tests
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="readme">
-                <span class="oi oi-paperclip" aria-hidden="true"></span> Lab 3: README
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="apilab">
-                <span class="oi oi-beaker" aria-hidden="true"></span> Lab 4: API Lab
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="refactor">
-                <span class="oi oi-transfer" aria-hidden="true"></span> Lab 5: Refactoring Lab
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+<MudNavMenu>
+    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="Icons.Material.Filled.Home">Home</MudNavLink>
+    <MudNavLink Href="errors" Icon="Icons.Material.Filled.BugReport">Lab 1: Debugging</MudNavLink>
+    <MudNavLink Href="unittest" Icon="Icons.Material.Filled.Assignment">Lab 2: Unit Tests</MudNavLink>
+    <MudNavLink Href="readme" Icon="Icons.Material.Filled.Description">Lab 3: README</MudNavLink>
+    <MudNavLink Href="apilab" Icon="Icons.Material.Filled.Api">Lab 4: API Lab</MudNavLink>
+    <MudNavLink Href="refactor" Icon="Icons.Material.Filled.Transform">Lab 5: Refactoring Lab</MudNavLink>
+</MudNavMenu>

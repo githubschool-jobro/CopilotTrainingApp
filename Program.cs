@@ -1,4 +1,5 @@
 using CopilotTrainingApp.Services;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddRazorPages();
+builder.Services.AddMudServices();
 builder.Services.AddSingleton<CalculatorService>();
 builder.Services.AddSingleton<ApiDataService>();
 
