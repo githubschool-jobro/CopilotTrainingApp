@@ -45,12 +45,12 @@ graph TD
     end
     
     subgraph "Data Flow"
-        D -->|@inject| I
+        D --> D["Input"]
         D --> N["User Input: value1 and value2"]
         N --> O[Add/Subtract/Divide Operations]
         O --> P[Result Display]
         
-        G -->|@inject| J
+        G --> G["Job"]
         G --> Q[Load Data Button]
         Q --> R[GetDataAsync Method]
         R --> S[Static Data List]
